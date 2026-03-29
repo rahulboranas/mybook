@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This Is Marketing - Seth Godin (Hinglish)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { darkMode: 'class', }
+    </script>
+    <style>
+        body { transition: background-color 0.3s ease, color 0.3s ease; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-100 font-sans antialiased">
+
+    <div class="fixed top-0 left-0 right-0 bg-white/80 dark:bg-gray-800/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-700 z-50 px-4 py-3 flex justify-between items-center shadow-sm">
+        
+        <h1 class="text-sm md:text-lg font-bold truncate pr-2">
+            This Is Marketing <span class="text-xs font-normal text-gray-500 dark:text-gray-400">- Seth Godin</span>
+        </h1>
+
+        <div class="flex items-center gap-2 md:gap-3">
+            <button id="bookmark-btn" class="p-1 md:p-1.5 rounded hover:bg-gray-200 dark:hover:bg-gray-700" title="Save Bookmark">
+                <svg class="w-6 h-6 inline-block text-gray-800 dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path></svg>
+            </button>
+            <div class="w-px h-6 bg-gray-300 dark:bg-gray-600"></div>
+            <button id="decrease-font" class="p-1 md:p-1.5 rounded hover:bg-gray-200 dark:hover:bg-gray-700 font-bold">A-</button>
+            <button id="increase-font" class="p-1 md:p-1.5 rounded hover:bg-gray-200 dark:hover:bg-gray-700 font-bold">A+</button>
+            <div class="w-px h-6 bg-gray-300 dark:bg-gray-600"></div>
+            <button id="theme-toggle" class="text-xl p-1 md:p-1.5 rounded hover:bg-gray-200 dark:hover:bg-gray-700">🌙</button>
+        </div>
+    </div>
+
+    <div id="toast" class="fixed top-16 left-1/2 transform -translate-x-1/2 bg-green-600 text-white px-4 py-2 rounded-full shadow-lg transition-opacity duration-300 opacity-0 pointer-events-none z-50 font-medium text-sm">
+        Bookmark Saved! ✅
+    </div>
+
+    <button id="jump-bookmark-btn" class="fixed border
+     bottom-6 right-6 bg-[#0a192f] text-white px-3 py-1.5 text-xs rounded-full shadow-xl hidden hover:bg-black transition-all z-50 flex items-center gap-1.5">
+        <span>Back to Mark</span>
+        <svg class="w-4 h-4 inline-block text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path></svg>
+    </button>
+
+    <div class="max-w-2xl mx-auto mt-20 p-6 md:p-8 md:mt-24 mb-20" id="content-container">
+        
+        <div id="text-content" class="text-base leading-relaxed space-y-6">
+            
+          <h2 class="text-2xl font-bold mb-4 mt-8">Chapter 2: The Marketer Learns to See</h2>
+
+<p>1983 mein, main bahut young aur inexperienced brand manager tha Spinnaker mein, ek startup software company jise maine business school ke baad join kiya tha. Achanak se mere budget mein millions of dollars aagaye, ad reps ke sath fancy lunches (jo maine maange bhi nahi the), aur ek urgent zaroorat: meri amazing team ne jo software banaya tha, uski baat logo tak pahunchana.</p>
+
+<p>Maine wo <em>saara</em> ad ka paisa barbaad kar diya. Ads ne kaam nahi kiya kyunki logo ne ads ko ignore kar diya tha. Par kisi na kisi tarah, software bik gaya.</p>
+
+<p>Itne saalo mein, maine dozens projects launch kiye hain aur businesses aur individuals dono ko goods aur services bechi hain. Maine Jay Levinson (Guerrilla Marketing ke father), Lester Wunderman (direct mail ke godfather), aur Bernadette Jiwa (storytelling ki queen) ke sath kaam kiya hai. Mere ideas ne billion-dollar companies khadi ki hain aur important charities ke liye lagbhag utna hi paisa raise kiya hai.</p>
+
+<p>Zyadatar, meri is journey mein yahi focus raha hai ki ye notice karun ki kya cheez kaam karti hai aur kya nahi karti. Ye trial aur error (zyadatar error) ka ek continuous experiment raha hai, un projects aur organizations ke sath jinki mujhe parwah hai.</p>
+<p>...ideas ek insaan se dusre insaan tak failte hain, aur jab aap koi badlaav (change) laate ho, toh aap ek poori community (tribe) ko apne sath jod lete ho.</p>
+
+<h2 class="text-2xl font-bold mb-4 mt-8">This Is Marketing: Ek Executive Summary</h2>
+
+<p>Jo ideas failte hain, wahi jeette hain.</p>
+
+<p>Marketers badlaav laate hain: us 'smallest viable market' (sabse choti par zaroori audience) ke liye. Wo aise personal aur relevant messages deliver karte hain jiska log wait kar rahe hote hain aur jo wo sach mein sunna chahte hain.</p>
+
+<p>Asli marketers consumers ka use apni company ki problem solve karne ke liye nahi karte; balki wo marketing ka use logo ki problems solve karne ke liye karte hain. Unke andar itni empathy (samajh) hoti hai ki wo jante hain ki unki audience wo nahi chahti jo marketer chahta hai. Audience un cheezon mein believe nahi karti ya unki parwah nahi karti jo marketer ke liye important hain. Aur shayad wo kabhi karenge bhi nahi.</p>
+
+<p>Hamare culture ke core mein 'status' ko lekar hamara belief hota hai—kisi bhi interaction mein hum apna role kya samajhte hain, aur hum aage kahan jaa rahe hain.</p>
+
+<p>Hum apne status roles aur ye decisions (ki hum kisse jude hain aur kispar hamara control hai) use karte hain ye tay karne ke liye ki hume kahan jana hai aur wahan kaise pahunchna hai.</p>
+
+<p>Lagatar, consistent aur baar-baar sunai jane wali kahaniyan, jab ek aisi audience tak pahunchti hain jo aapse align karti hai, toh wo apko unka attention, trust aur action dilaati hain.</p>
+
+<p>Direct marketing aur brand marketing dono ek nahi hain, par dono isi decision par base karti hain ki hume sahi logo ke liye sahi cheez banani hai.</p>
+
+<p>"Hamare jaise log aisi hi cheezein karte hain" — isi line se hum sab culture ko samajhte hain, aur marketers har roz isi idea ke sath deal karte hain.</p>
+
+<p>Ideas ek slope (dhalan) ke zariye aage badhte hain. Wo early adopters ke beech se hote hue nikalte hain...</p>
+
+<p>...early adopters se hote hue ek chasm (badi khaai) ko paar karte hain, aur phir mehnat karke aam janta (masses) tak pahunchte hain. Kabhi-kabhi.</p>
+
+<p>Aajkal attention ek bahut precious resource hai kyunki hamare dimaag mein pehle se hi bahut shor (noise) bhara hai. Smart marketers un logo ke liye chizein aasan bana dete hain jinhe wo target kar rahe hain. Wo apne product (offering) ko aise position karte hain jo logo ke dil ko chhu jaye (resonates) aur yaadgar (memorable) ban jaye.</p>
+
+<p>Sabse badi baat, marketing is cheez se shuru (aur aksar khatam) hoti hai ki hum kya karte hain aur kaise karte hain. Marketing un sab cheezon ke baare mein nahi hai jo product banne aur ship hone ke baad aati hain.</p>
+
+<p>Tumhari tactics (chhoti tricks) thoda bahut fark la sakti hain, par tumhari strategy—tumhara ek tareeke se jeene ka commitment, ek kahani jo sunani hai, aur ek promise jo nibhana hai—ye sab kuch badal sakti hai.</p>
+
+<p>Agar tum badlaav (change) laana chahte ho, toh ek culture banane se shuruat karo. Ek tightly knit group (majbooti se jude hue logo ka group) banane se shuruat karo. Logo ko ek sync (ek soch) mein laane se shuruat karo.</p>
+
+<p class="font-bold italic text-gray-700 dark:text-gray-300">Culture hamesha strategy ko hara deta hai—itna zyada ki culture hi asli strategy hai.</p>
+
+<h3 class="text-xl font-bold mb-4 mt-8">Wo baatein jo marketers jaante hain:</h3>
+
+<ol class="list-decimal pl-5 space-y-4 mb-6">
+    <li><strong>Committed aur creative log duniya badal sakte hain</strong> (sach toh ye hai ki sirf wahi badalte hain). Tum isse abhi issi waqt kar sakte ho, aur tum apni soch se bhi kahin zyada bada badlaav la sakte ho.</li>
+    
+    <li><strong>Tum har kisi ko nahi badal sakte;</strong> isliye ye puchna ki, "Ye kiske liye hai?" (Who's it for?) tumhare actions ko focus de sakta hai aur un logo se deal karne mein madad kar sakta hai jo tum par vishwas nahi karte (chahe wo tumhare dimaag ke andar ke nonbelievers hon ya bahar ki duniya ke).</li>
+    
+    <li><strong>Badlaav hamesha intent (ek saaf maqsad) ke sath sabse aacha hota hai.</strong> "Iska fayda kya hai?" (What's it for?) — yahi wo mindset hai jo us kaam ke liye zaroori hai jo sach mein matter karta hai.</li>
+</ol>
+
+<p>...early adopters se hote hue ek chasm (badi khaai) ko paar karte hain, aur phir mehnat karke aam janta (masses) tak pahunchte hain. Kabhi-kabhi.</p>
+
+<p>Aajkal attention ek bahut precious resource hai kyunki hamare dimaag mein pehle se hi bahut shor (noise) bhara hai. Smart marketers un logo ke liye chizein aasan bana dete hain jinhe wo target kar rahe hain. Wo apne product (offering) ko aise position karte hain jo logo ke dil ko chhu jaye (resonates) aur yaadgar (memorable) ban jaye.</p>
+
+<p>Sabse badi baat, marketing is cheez se shuru (aur aksar khatam) hoti hai ki hum kya karte hain aur kaise karte hain. Marketing un sab cheezon ke baare mein nahi hai jo product banne aur ship hone ke baad aati hain.</p>
+
+<p>Tumhari tactics (chhoti tricks) thoda bahut fark la sakti hain, par tumhari strategy—tumhara ek tareeke se jeene ka commitment, ek kahani jo sunani hai, aur ek promise jo nibhana hai—ye sab kuch badal sakti hai.</p>
+
+<p>Agar tum badlaav (change) laana chahte ho, toh ek culture banane se shuruat karo. Ek tightly knit group (majbooti se jude hue logo ka group) banane se shuruat karo. Logo ko ek sync (ek soch) mein laane se shuruat karo.</p>
+
+<p class="font-bold italic text-gray-700 dark:text-gray-300">Culture hamesha strategy ko hara deta hai—itna zyada ki culture hi asli strategy hai.</p>
+
+<h3 class="text-xl font-bold mb-4 mt-8">Wo baatein jo marketers jaante hain:</h3>
+
+<ol class="list-decimal pl-5 space-y-4 mb-6">
+    <li><strong>Committed aur creative log duniya badal sakte hain</strong> (sach toh ye hai ki sirf wahi badalte hain). Tum isse abhi issi waqt kar sakte ho, aur tum apni soch se bhi kahin zyada bada badlaav la sakte ho.</li>
+    
+    <li><strong>Tum har kisi ko nahi badal sakte;</strong> isliye ye puchna ki, "Ye kiske liye hai?" (Who's it for?) tumhare actions ko focus de sakta hai aur un logo se deal karne mein madad kar sakta hai jo tum par vishwas nahi karte (chahe wo tumhare dimaag ke andar ke nonbelievers hon ya bahar ki duniya ke).</li>
+    
+    <li><strong>Badlaav hamesha intent (ek saaf maqsad) ke sath sabse aacha hota hai.</strong> "Iska fayda kya hai?" (What's it for?) — yahi wo mindset hai jo us kaam ke liye zaroori hai jo sach mein matter karta hai.</li>
+</ol>
+<ol start="4" class="list-decimal pl-5 space-y-4 mb-6">
+    <li><strong>Insaan khud ko kahaniyan (stories) sunate hain.</strong> Jahan tak hum mein se har ek ka sawal hai, wo kahaniyan bilkul aur poori tarah se sach hoti hain, aur unhe (ya humein) iske khilaf samjhane ki koshish karna bevakoofi hai.</li>
+    
+    <li><strong>Hum logo ko stereotyped groups mein baant sakte hain,</strong> jo aksar (par hamesha nahi) khud ko ek jaisi kahaniyan sunate hain. Ye aise groups hote hain jo apne status aur doosri zarooraton ke hisaab se ek jaise decisions lete hain.</li>
+    
+    <li><strong>Tum kya kehte ho ye utna important nahi hai,</strong> jitna ye important hai ki doosre tumhare baare mein kya kehte hain.</li>
+</ol>
+
+
+        </div>
+    </div>
+
+    <script>
+        const htmlElement = document.documentElement;
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const textContent = document.getElementById('text-content');
+        const increaseFontBtn = document.getElementById('increase-font');
+        const decreaseFontBtn = document.getElementById('decrease-font');
+        const bookmarkBtn = document.getElementById('bookmark-btn');
+        const jumpBookmarkBtn = document.getElementById('jump-bookmark-btn');
+        const toast = document.getElementById('toast');
+
+        // 1. Theme Logic
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            htmlElement.classList.add('dark');
+            themeToggleBtn.innerText = '☀️';
+        }
+        themeToggleBtn.addEventListener('click', () => {
+            htmlElement.classList.toggle('dark');
+            if (htmlElement.classList.contains('dark')) {
+                localStorage.setItem('theme', 'dark');
+                themeToggleBtn.innerText = '☀️';
+            } else {
+                localStorage.setItem('theme', 'light');
+                themeToggleBtn.innerText = '🌙';
+            }
+        });
+
+        // 2. Font Size Logic
+        let currentSize = parseInt(localStorage.getItem('fontSize')) || 16;
+        textContent.style.fontSize = currentSize + 'px';
+        increaseFontBtn.addEventListener('click', () => {
+            if (currentSize < 30) {
+                currentSize += 2;
+                textContent.style.fontSize = currentSize + 'px';
+                localStorage.setItem('fontSize', currentSize);
+            }
+        });
+        decreaseFontBtn.addEventListener('click', () => {
+            if (currentSize > 12) {
+                currentSize -= 2;
+                textContent.style.fontSize = currentSize + 'px';
+                localStorage.setItem('fontSize', currentSize);
+            }
+        });
+
+        // 3. Auto-Scroll Memory
+        window.addEventListener('load', () => {
+            const savedScroll = localStorage.getItem('autoScrollPos');
+            if (savedScroll) {
+                window.scrollTo({ top: parseInt(savedScroll), behavior: 'auto' });
+            }
+            
+            // Check if manual bookmark exists
+            if (localStorage.getItem('myBookmark')) {
+                jumpBookmarkBtn.classList.remove('hidden');
+            }
+        });
+
+        let isScrolling;
+        window.addEventListener('scroll', () => {
+            window.clearTimeout(isScrolling);
+            isScrolling = setTimeout(() => {
+                localStorage.setItem('autoScrollPos', window.scrollY);
+            }, 150);
+        });
+
+        // 4. Explicit Bookmark Logic
+        bookmarkBtn.addEventListener('click', () => {
+            localStorage.setItem('myBookmark', window.scrollY);
+            jumpBookmarkBtn.classList.remove('hidden');
+            
+            // Show Toast
+            toast.classList.remove('opacity-0');
+            setTimeout(() => {
+                toast.classList.add('opacity-0');
+            }, 2000);
+        });
+
+        jumpBookmarkBtn.addEventListener('click', () => {
+            const targetScroll = localStorage.getItem('myBookmark');
+            if (targetScroll) {
+                window.scrollTo({
+                    top: parseInt(targetScroll),
+                    behavior: 'smooth'
+                });
+            }
+        });
+    </script>
+</body>
+</html>
